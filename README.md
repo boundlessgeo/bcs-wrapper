@@ -1,7 +1,7 @@
 # bcs-wrapper
 
 auth0.properties file should go in the main/resources folder:
-
+ 
 auth0.domain=boundlessgeo-dev.auth0.com
 auth0.issuer: https://boundlessgeo-dev.auth0.com/
 auth0.clientId=#############################
