@@ -40,6 +40,8 @@ public class Auth0SecurityConfigBCS extends Auth0SecurityConfig {
                 .antMatchers("/ping", "/pong","/public/**").permitAll()
                 .antMatchers(HttpMethod.GET, "/api/v1/profiles").hasAnyAuthority("ROLE_USER", "ROLE_ADMIN")
                 .antMatchers(HttpMethod.GET, "/api/v1/profiles/**").hasAnyAuthority("ROLE_USER", "ROLE_ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/v1/search").hasAnyAuthority("ROLE_USER", "ROLE_ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/v1/search/**").hasAnyAuthority("ROLE_USER", "ROLE_ADMIN")
                 .antMatchers(HttpMethod.POST, "/api/v1/profiles/**").hasAnyAuthority("ROLE_ADMIN")
                 .antMatchers(HttpMethod.PUT, "/api/v1/profiles/**").hasAnyAuthority("ROLE_ADMIN")
                 .antMatchers(HttpMethod.DELETE, "/api/v1/profiles/**").hasAnyAuthority("ROLE_ADMIN")
