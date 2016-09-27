@@ -23,7 +23,7 @@ To get the token from Auth0 post the following to https://boundlessgeo-dev.auth0
   "scope":"openid name email roles"  
 }  
 
-To call the secure wrapper services, put the token in the header like this:
+To call the secure wrapper services, put the token in the header like this:  
 authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiZmFzZGZhc2RAYXNkZi5zcyIsImVtYWlsIjoiZmFzZGZhc2RAYXNkZi5zcyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJyb2xlcyI6WyJST0xFX1VTRVIiLCJST0xFX0FETUlOIl0sImlzcyI6Imh0dHBzOi8vYm91bmRsZXNzZ2VvLWRldi5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NTc2N2VmNmRiYTlmYjY1ODU1MTRkMGQ5IiwiYXVkIjoiRUowd3hDU1FkZzJFMGpOaHVrR3FZS0RTSmpTeVk0emoiLCJleHAiOjE0NzQ5ODIyNDcsImlhdCI6MTQ3NDk0NjI0N30.YPmrlODXPgakZilh49KFsiEG58uAxRCaGh9ohsWj6Kc
 
 To test the security, use the main branch and call:  
